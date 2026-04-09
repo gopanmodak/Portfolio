@@ -17,7 +17,7 @@
 ## 🔴 Live Demo
 
 <p align="center">
-  <a href="https://your-portfolio-link.com" target="_blank">
+  <a href="https://gopanmodak.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/🚀_LIVE_PORTFOLIO-000?style=for-the-badge&logo=vercel&logoColor=00F7FF"/>
   </a>
 </p>
@@ -68,16 +68,20 @@
 
 ⚔️ **Skill Power**
 
-HTML <img src="https://img.shields.io/badge/██████████-90%25-00F7FF?style=for-the-badge"/>
+**HTML**  
+<img src="https://img.shields.io/badge/HTML-90%25-00F7FF?style=for-the-badge&logo=html5&logoColor=white"/>
 
-CSS <img src="https://img.shields.io/badge/████████░░-85%25-00F7FF?style=for-the-badge"/>
+**CSS**  
+<img src="https://img.shields.io/badge/CSS-85%25-00F7FF?style=for-the-badge&logo=css3&logoColor=white"/>
 
-JavaScript <img src="https://img.shields.io/badge/███████░░░-75%25-00F7FF?style=for-the-badge"/>
+**JavaScript**  
+<img src="https://img.shields.io/badge/JavaScript-75%25-00F7FF?style=for-the-badge&logo=javascript&logoColor=white"/>
 
-React <img src="https://img.shields.io/badge/████████░░-85%25-00F7FF?style=for-the-badge"/>
+**React**  
+<img src="https://img.shields.io/badge/React-85%25-00F7FF?style=for-the-badge&logo=react&logoColor=white"/>
 
-Node.js <img src="https://img.shields.io/badge/███████░░░-75%25-00F7FF?style=for-the-badge"/>
-
+**Node.js**  
+<img src="https://img.shields.io/badge/Node.js-75%25-00F7FF?style=for-the-badge&logo=node.js&logoColor=white"/>
 ---
 
 🏆 **Achievements**
@@ -137,8 +141,8 @@ npm run dev
 <p align="center">
 
 📧 [gopanhridoy@gmail.com](mailto:your@email.com)
-💼 https://linkedin.com/in/yourname
-🐙 https://github.com/yourusername
+💼 https://www.linkedin.com/in/gopan-modak
+🐙 https://github.com/gopanmodak
 
 </p>
 
