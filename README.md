@@ -69,19 +69,19 @@
 ⚔️ **Skill Power**
 
 **HTML**  
-<img src="https://img.shields.io/badge/HTML-90%25-00F7FF?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/HTML-90%25-800080?style=for-the-badge&logo=html5&logoColor=white"/>
 
 **CSS**  
-<img src="https://img.shields.io/badge/CSS-85%25-00F7FF?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS-85%25-800080?style=for-the-badge&logo=css3&logoColor=white"/>
 
 **JavaScript**  
-<img src="https://img.shields.io/badge/JavaScript-75%25-00F7FF?style=for-the-badge&logo=javascript&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-75%25-800080?style=for-the-badge&logo=javascript&logoColor=white"/>
 
 **React**  
-<img src="https://img.shields.io/badge/React-85%25-00F7FF?style=for-the-badge&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-85%25-800080?style=for-the-badge&logo=react&logoColor=white"/>
 
 **Node.js**  
-<img src="https://img.shields.io/badge/Node.js-75%25-00F7FF?style=for-the-badge&logo=node.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/Node.js-75%25-800080?style=for-the-badge&logo=node.js&logoColor=white"/>
 ---
 
 🏆 **Achievements**
