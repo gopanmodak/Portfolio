@@ -12,27 +12,27 @@ const App = () => {
     <div>
       <Navbar />
 
-      <section id="home">
+      <section id="home"  className='bg-linear-to-b from-black to-gray-900'>
         <Home/>
       </section>
 
-      <section id="about">
+      <section id="about" className='py-20'>
         <About/>
       </section>
 
-      <section id="skills">
+      <section id="skills" className='py-20'>
         <Skills/>
       </section>
 
-      <section id="projects">
+      <section id="projects" className='py-20'>
        <Projects />
       </section>
 
-      <section id="experience">
+      <section id="experience" className='py-20'>
         <Experience/>
       </section>
 
-      <section id="contact">
+      <section id="contact" className='py-20'>
         <Contact />
       </section>
     </div>

@@ -7,7 +7,7 @@ const Home = () => {
    <div  className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 py-20 px-5">
     <div>
       <span className="border  border-blue-500/20 rounded-3xl px-4 py-2 inline-block mt-10 bg-linear-to-r from-blue-500/10 to-cyan-500/10">
-        <h2 className="text-blue-400 font-semibold text-xl">
+        <h2 className="text-blue-400 font-semibold text-md">
           Welcome to my portfolio
         </h2>
       </span>
@@ -21,7 +21,7 @@ const Home = () => {
       <h1 className="text-2xl mt-5 font-semibold text-blue-400">
         MERN Stack Developer
       </h1>
-      <p className="text-gray-400 text-lg max-w-lg mt-5">
+      <p className="text-gray-400 text-lg max-w-xl mt-5">
         I build modern, fast, and scalable web applications with cutting-edge
         technologies. Transforming ideas into elegant digital experiences
       </p>
