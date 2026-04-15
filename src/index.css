@@ -6,3 +6,7 @@ html {
    margin: 0;
   background: linear-gradient(to right, #0f172a, #0a1e3f, #051359);
 }
+
+section{
+  min-height: 100vh;
+}
