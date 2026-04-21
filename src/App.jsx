@@ -6,6 +6,7 @@ import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
 import Contact from './Pages/Contact';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -32,9 +33,13 @@ const App = () => {
         <Experience/>
       </section>
 
-      <section id="contact" className='py-20'>
+      <section id="contact" className='bg-linear-to-r from-blue-900/20 to-cyan-900/10 py-20'>
         <Contact />
       </section>
+      <div id="contact" className='border-t-2 border-t-amber-50/20 py-8'>
+        <Footer/>
+      </div>
+      
     </div>
   )
 }

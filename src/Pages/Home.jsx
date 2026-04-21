@@ -30,7 +30,7 @@ const Home = () => {
         <div>
           <a
             href="#contact"
-            class="px-4 md:px-6 py-4 relative rounded group font-medium text-white  inline-block"
+            class="px-4 md:px-6 py-3 relative rounded group font-medium text-white  inline-block"
           >
             <span class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-linear-to-br from-purple-600 to-blue-500"></span>
             <span class="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-linear-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"></span>
@@ -48,7 +48,7 @@ const Home = () => {
         <div>
           <a
             href="#projects"
-            class="py-4 text-lg text-white bg-gray-800 px-7 hover:bg-gray-700 rounded-xl flex items-center gap-2"
+            class="py-3 text-lg text-white bg-gray-800 px-7 hover:bg-gray-700 rounded-xl flex items-center gap-2"
           >
             View Projects{" "}
             <span>
