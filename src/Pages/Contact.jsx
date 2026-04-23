@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
+import { motion } from "framer-motion";
 import { FaGithub, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
-import { FaFacebookF, FaLinkedin, FaLocationDot } from "react-icons/fa6";
+import { FaFacebookF, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
@@ -8,141 +10,154 @@ const Contact = () => {
     event.preventDefault();
     alert("Form submitted!");
   };
+
   return (
     <section className="p-5">
-      <p className="text-md font-bold bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+      {/* Heading */}
+      <motion.p
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-md font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"
+      >
         Get in Touch
-      </p>
+      </motion.p>
 
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mt-2">
+      <motion.h1
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mt-2"
+      >
         Contact Me
-      </h1>
+      </motion.h1>
 
       <div className="flex justify-center mt-4">
         <span className="block w-24 border-b-4 border-blue-400 rounded-full"></span>
       </div>
 
       <div className="grid md:grid-cols-2 gap-10 mt-12 max-w-7xl mx-auto">
-        <div className="space-y-5">
-          <h3 className="text-2xl font-semibold text-gray-100">Let's Talk</h3>
+        
+        {/* LEFT SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          className="space-y-5"
+        >
+          <h3 className="text-2xl font-semibold text-gray-100">
+            Let's Talk
+          </h3>
 
           <p className="text-gray-400 text-lg">
             I'm always open to discussing new projects, creative ideas, or
             opportunities to be part of your vision.
           </p>
 
-          <div className="flex gap-5 group hover:scale-95 transition-all duration-300 cursor-pointer items-center mt-10">
-            <div className="bg-blue-400 p-2 rounded-lg w-12 flex justify-center items-center shadow-[0_2px_3px_#22d3ee]">
-              <MdEmail className="text-2xl text-white" />
-            </div>
-
-            <div className="text-gray-400">
-              <p>Email</p>
-              <p className="text-white text-md group-hover:text-blue-500 transition-all duration-300">
-                gopanhridoy@gmail.com
-              </p>
-            </div>
-          </div>
-
-          <div className="flex gap-5 group hover:scale-95 transition-all duration-300 cursor-pointer items-center">
-            <div className="bg-blue-400 p-2 rounded-lg w-12 flex justify-center items-center shadow-[0_2px_3px_#22d3ee]">
-              <FaPhoneAlt className="text-2xl text-white" />
-            </div>
-
-            <div className="text-gray-400">
-              <p>Phone</p>
-              <p className="text-white text-md group-hover:text-blue-500 transition-all duration-300">
-                +8801709200099
-              </p>
-            </div>
-          </div>
-
-          <div className="flex gap-5 group hover:scale-95 transition-all duration-300 cursor-pointer items-center">
-            <div className="bg-blue-400 p-2 rounded-lg w-12 flex justify-center items-center shadow-[0_2px_3px_#22d3ee]">
-              <FaLocationDot className="text-2xl text-white" />
-            </div>
-
-            <div className="text-gray-400">
-              <p>Location</p>
-              <p className="text-white text-md group-hover:text-blue-500 transition-all duration-300">
-                Dhaka, Bangladesh
-              </p>
-            </div>
-          </div>
-
-          <div className="flex gap-5 mt-10">
-            <a
-              href="https://github.com/gopanmodak"
-              target="blank"
-              className="bg-gray-700 p-2 rounded-lg hover:bg-blue-600 hover:scale-105 transition-all duration-300"
+          {/* Contact Items */}
+          {[ 
+            { icon: <MdEmail />, title: "Email", value: "gopanhridoy@gmail.com" },
+            { icon: <FaPhoneAlt />, title: "Phone", value: "+8801709200099" },
+            { icon: <FaLocationDot />, title: "Location", value: "Dhaka, Bangladesh" },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: i * 0.2 }}
+              whileHover={{ scale: 1.05 }}
+              className="flex gap-5 cursor-pointer items-center mt-5"
             >
-              <FaGithub className="text-2xl text-white" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/gopan-modak/"
-              target="blank"
-              className="bg-gray-700 p-2 rounded-lg hover:bg-blue-600 hover:scale-105 transition-all duration-300"
-            >
-              <FaLinkedinIn className="text-2xl text-white" />
-            </a>
-            <a
-              href="https://www.facebook.com/im.gopan"
-              target="blank"
-              className="bg-gray-700 p-2 rounded-lg hover:bg-blue-600 hover:scale-105 transition-all duration-300"
-            >
-              <FaFacebookF className="text-2xl text-white" />
-            </a>
-          </div>
-        </div>
+              <div className="bg-blue-400 p-2 rounded-lg w-12 flex justify-center items-center shadow-[0_2px_3px_#22d3ee] text-white text-2xl">
+                {item.icon}
+              </div>
 
-        <div
+              <div className="text-gray-400">
+                <p>{item.title}</p>
+                <p className="text-white text-md hover:text-blue-500 transition">
+                  {item.value}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+
+          {/* Social Icons */}
+          <motion.div
+            className="flex gap-5 mt-10"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          >
+            {[FaGithub, FaLinkedinIn, FaFacebookF].map((Icon, i) => (
+              <motion.a
+                key={i}
+                href="#"
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                className="bg-gray-700 p-2 rounded-lg text-white text-2xl hover:bg-blue-600 transition"
+              >
+                <Icon />
+              </motion.a>
+            ))}
+          </motion.div>
+        </motion.div>
+
+        {/* RIGHT FORM */}
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
           className="
-          bg-linear-to-r from-[#111827] to-[#0f172a]
+          bg-gradient-to-r from-[#111827] to-[#0f172a]
           p-8 rounded-2xl border border-white/10 backdrop-blur-sm
           shadow-[0_20px_50px_0_rgba(0,255,255,0.2)]
-          transition-all duration-300"
+        "
         >
           <form
-            action=""
             className="flex flex-col gap-5"
             onSubmit={handleFormSubmit}
           >
-            <label htmlFor="name" className="text-gray-300">
-              Your Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              placeholder="Enter your name"
-              className="input input-info w-full p-6 rounded-2xl"
-              required
-            />
+            {/* Inputs */}
+            {["name", "email"].map((field, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.2 }}
+              >
+                <label className="text-gray-300 capitalize">
+                  Your {field}
+                </label>
+                <input
+                  type={field === "email" ? "email" : "text"}
+                  placeholder={`Enter your ${field}`}
+                  className="w-full p-4 rounded-xl bg-black/30 border border-white/10 text-white focus:outline-none focus:border-blue-500"
+                  required
+                />
+              </motion.div>
+            ))}
 
-            <label htmlFor="email" className="text-gray-300">
-              Your Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Enter your email"
-              className="input input-info w-full p-6 rounded-2xl"
-              required
-            />
+            {/* Textarea */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+            >
+              <label className="text-gray-300">Your Message</label>
+              <textarea
+                className="w-full p-4 rounded-xl bg-black/30 border border-white/10 text-white focus:outline-none focus:border-blue-500"
+                placeholder="Write your message..."
+              ></textarea>
+            </motion.div>
 
-            <label htmlFor="message" className="text-gray-300">
-              Your Message
-            </label>
-            <textarea
-              id="message"
-              className="textarea textarea-info w-full p-10 rounded-2xl"
-              placeholder="Write your message..."
-            ></textarea>
-
-            <button className="btn text-gray-100 font-bold text-md btn-info hover:scale-95 transition-all duration-300 ">
+            {/* Button */}
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-500 text-white font-bold py-3 rounded-xl hover:bg-blue-600 transition"
+            >
               Send Message
-            </button>
+            </motion.button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
