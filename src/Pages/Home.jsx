@@ -96,9 +96,10 @@ const Home = () => {
           className="border border-blue-500/20 rounded-full p-5 relative"
         >
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnopuL3YNupxeGzEyo_SUy-gCcS_3RFYP9YA&s"
+            src="https://i.ibb.co.com/vvzPLn8w/AGC-20240809-203753342-2.jpg"
             alt="profile"
-            className="border border-blue-500/20 rounded-full p-5"
+            className="border border-blue-500/20 rounded-full p-5 h-50 w-50 object-cover relative z-10"
+            loading="lazy"
           />
         </motion.div>
       </motion.div>
