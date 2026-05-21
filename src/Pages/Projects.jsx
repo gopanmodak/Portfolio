@@ -21,12 +21,12 @@ const Projects = () => {
       github: "https://github.com/gopanmodak/Xpressio"
     },
     {
-      title: "SkyWay",
-      desc: "SkyWay is a travel booking platform that offers users a seamless experience to discover and book flights, hotels, and vacation packages worldwide.",
+      title: "WanderNext",
+      desc: "WanderNext is a travel booking platform that offers users a seamless experience to discover and book flights, hotels, and vacation packages worldwide.",
       tags: ["React", "Firebase", "Tailwind"],
       img: "https://photos.tripsite.com/assets/files/5297/type-bike-hotel.576x300-hidpi.webp",
-      live: "#",
-      github: "https://github.com/gopanmodak/SkyWay"
+      live: "https://wander-nest-woad.vercel.app/",
+      github: "https://github.com/gopanmodak/WanderNest"
     }
   ];
 
